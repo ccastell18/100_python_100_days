@@ -36,23 +36,21 @@ print(game_images[user_choice])
 
 if user_choice >= 3 or user_choice < 0:
     print("You typed an invalid number")
+else:
+    computer_choice = random.randint(0, 2)
 
-computer_choice = random.randint(0, 2)
+    print("Computer chooses: ")
+    print(game_images[computer_choice])
 
-print("Computer chooses: ")
-print(game_images[computer_choice])
+    if user_choice == 0 and computer_choice == 2:
+        print('You win')
+    elif computer_choice == 0 and user_choice == 2:
+        print("You Lose")
+    elif computer_choice > user_choice:
+        print("You Lose")
+    elif user_choice > computer_choice:
+        print("You win")
+    elif user_choice == computer_choice:
+        print("It is a tie")
 
-
-if user_choice == 0 and computer_choice == 2:
-    print('You win')
-elif computer_choice == 0 and user_choice == 2:
-    print("You Lose")
-elif computer_choice > user_choice:
-    print("You Lose")
-elif user_choice > computer_choice:
-    print("You win")
-elif user_choice == computer_choice:
-    print("It is a tie")
-
-
-print(f"computer chose {computer_choice}")
+    print(f"computer chose {computer_choice}")
