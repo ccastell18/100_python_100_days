@@ -1,11 +1,9 @@
 # imported for use of random function
 import random
-import os
+
 import words
 import art
 
-
-# models for the hangman
 
 print(art.logo)
 # used to keep the game going in the while loop until it is switched to true
