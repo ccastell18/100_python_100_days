@@ -1,0 +1,8 @@
+Function:
+
+def my_function():
+  #Do this
+  #than this
+
+#then call Function
+my_function()
